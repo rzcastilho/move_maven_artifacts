@@ -11,10 +11,14 @@ Install the `Maven Client` and make it available at system path.
 ## Build
 
 ```shell script
-
+$ git clone https://github.com/rzcastilho/move_maven_artifacts
+$ cd move_maven_artifacts
 $ mix deps.get
 $ mix escript.build
 ```
 
 ## Run
 
+```shell script
+
+```

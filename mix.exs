@@ -7,7 +7,8 @@ defmodule MoveMavenArtifacts.MixProject do
       version: "0.1.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      escript: escript()
     ]
   end
 
@@ -22,7 +23,13 @@ defmodule MoveMavenArtifacts.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.5"},
-      {:floki, "~> 0.23.0"}
+      {:floki, "~> 0.23.0"},
+      {:bunt, "~> 0.2.0"}
     ]
   end
+
+  defp escript do
+    [main_module: MoveMavenArtifacts]
+  end
+
 end
