@@ -20,5 +20,11 @@ $ mix escript.build
 ## Run
 
 ```shell script
+$ ./move_maven_artifacts -s <maven_repo_source> -t <maven_repo_target> -p <initial_path>
+```
 
+**Important:** Inform `username` and `password` in the target URL like below.
+
+```
+https://<username>:<password>@<hostname>:<port>
 ```
